@@ -1,0 +1,30 @@
+{
+  "name": "isometry-interfaces",
+  "version": "1.0.0",
+  "description": "ABIs, addresses and TypeScript exports for the Isometry contracts on HyperEVM (999)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./abi/*.json": "./abi/*.json",
+    "./deployments/*.json": "./deployments/*.json"
+  },
+  "files": ["dist", "abi", "deployments"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": ["isometry", "hyperliquid", "hyperevm", "copy-trading", "abi", "viem"],
+  "homepage": "https://isometry.me",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isometryme/interfaces.git"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
